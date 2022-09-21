@@ -14,7 +14,7 @@ namespace lab1
                 string strR = Console.ReadLine();
                 isROk = double.TryParse(strR, out R);
                 if (!isROk)
-                Console.WriteLine("Помилка введення напруги");
+                Console.WriteLine("Помилка введення:");
             } while (!isROk);
             double S = 4 * Math.PI * (R * R), V = 4 * Math.PI * (R * R * R) / 3;
             Console.WriteLine("Площа кулi: {0} Об'єм кулi: {1}", S, V);
